@@ -215,7 +215,6 @@
 		}
 
 		.qodef-header-sticky {
-			position: fixed !important;
 			background-color: rgba(0, 0, 0, 0.2);
 		}
 
@@ -258,6 +257,16 @@
 		.qodef-mobile-header--standard #qodef-page-mobile-header {
 			background-color: rgba(0, 0, 0, 0);
 		}
+.qodef-header,
+.qodef-header-sticky,
+.qodef-header-navigation {
+    transform: translateY(0) !important;
+    top: 0 !important;
+    opacity: 1 !important;
+}
+.qodef--sticky-header-appearance {
+    transform: none !important;
+}
 
 		@media only screen and (max-width: 680px) {
 
@@ -2940,8 +2949,8 @@
 	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KLJLSX7" height="0" width="0"
 			style="display:none;visibility:hidden" aria-hidden="true"></iframe></noscript>
 	<!-- End Google Tag Manager (noscript) -->
-<header class="navbar navbar-collapse" >
-    <div class="qodef-header-sticky">
+	<header id="qodef-page-header" class="navbar navbar-collapse" role="banner">
+    <div class="qodef-header-sticky qodef-skin--viridian-green qodef-appearance--up">
         <div class="qodef-header-sticky-inner">
 
             <nav class="qodef-header-navigation" role="navigation" aria-label="Split Left to Right Menu">
